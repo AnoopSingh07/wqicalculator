@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+// import { useNavigate } from 'react-router-dom';
+import WqiHome from './components/WqiHome.js';
+import WqiResults from './components/WqiResults.js';
+import { Route, Routes } from 'react-router';
 
 function App() {
+  // const navigate = useNavigate();
+  const [wqi, setWqi] = useState(0);
+
+  const resetWqi = () => {
+    setWqi(0);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        exact
+        path="/"
+        element={
+          <>
+            <div className="App">
+              <WqiHome setWqi={setWqi} />
+            </div>
+          </>
+        }
+      />
+
+      <Route
+        exact
+        path="/wqiResults"
+        element={
+          <>
+            <div className="App">
+              <WqiResults wqi={wqi} resetWqi={resetWqi} />
+            </div>
+          </>
+        }
+      />
+    </Routes>
   );
 }
 
