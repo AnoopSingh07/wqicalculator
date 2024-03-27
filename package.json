@@ -1,6 +1,6 @@
 {
   "homepage": "http://AnoopSingh07.github.io/wqicalculator",
-  "name": "fcm-estimator",
+  "name": "wqicalculator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
