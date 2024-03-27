@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wqicalculator/static/css/main.a6420034.css",
+    "main.js": "/wqicalculator/static/js/main.97ebe932.js",
+    "static/media/waterbg3.webp": "/wqicalculator/static/media/waterbg3.0c568cb7054b064ae8c8.webp",
+    "static/media/waterdrop.png": "/wqicalculator/static/media/waterdrop.7f66220915c84843414c.png",
+    "index.html": "/wqicalculator/index.html",
+    "main.a6420034.css.map": "/wqicalculator/static/css/main.a6420034.css.map",
+    "main.97ebe932.js.map": "/wqicalculator/static/js/main.97ebe932.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6420034.css",
+    "static/js/main.97ebe932.js"
+  ]
+}
